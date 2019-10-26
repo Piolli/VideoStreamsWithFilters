@@ -23,22 +23,39 @@ class ViewController: NSViewController {
     }
     
     @IBOutlet weak var videoStream1PopUpButton: NSPopUpButton!
+    @IBOutlet weak var videoStream2PopUpButton: NSPopUpButton!
     
     @IBOutlet weak var ouputVideoStream1: NSImageView!
+    @IBOutlet weak var ouputVideoStream2: NSImageView!
+    
     let videoStream1URL = URL(string: "http:commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4")!
-    let videoStream2URL = URL(string: "http:commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4")!
+    let videoStream2URL = URL(string: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4")!
     
     private var playerItemObserver: NSKeyValueObservation?
     
-    var provider: VideoStreamProvider!
+    var videoStream1Provider: VideoStreamProvider!
+    var videoStream2Provider: VideoStreamProvider!
+    
     var imageFilters: [String: ImageFilter] = [:]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        provider = VideoStreamProvider(outputView: ouputVideoStream1, streamURL: videoStream1URL, imageFilter: noFilter(image:))
+        videoStream1Provider = VideoStreamProvider(outputView: ouputVideoStream1, streamURL: videoStream1URL, imageFilter: noFilter(image:))
+        videoStream2Provider = VideoStreamProvider(outputView: ouputVideoStream2, streamURL: videoStream2URL, imageFilter: noFilter(image:))
         
-        //loads libs
+        loadFiltersFromDyLibs()
+        
+        populatePopUpButton(videoStream1PopUpButton)
+        populatePopUpButton(videoStream2PopUpButton)
+    }
+    
+    override func viewDidAppear() {
+        super.viewDidAppear()
+        view.window?.title = "Video Stream Filters"
+    }
+    
+    func loadFiltersFromDyLibs() {
         let libs = getDyLibNamesInAppFolder()
         plog(libs)
         
@@ -48,16 +65,17 @@ class ViewController: NSViewController {
             imageFilters[filterName] = getFilterFuncDyLib
         }
         imageFilters["noFilter"] = noFilter(image:)
-        
-        videoStream1PopUpButton.removeAllItems()
-        videoStream1PopUpButton.addItems(withTitles: imageFilters.keys.map({ (key) -> String in
+    }
+    
+    func populatePopUpButton(_ popUpButton: NSPopUpButton) {
+        popUpButton.removeAllItems()
+        popUpButton.addItems(withTitles: imageFilters.keys.map({ (key) -> String in
             return String(key)
         }))
         
-        videoStream1PopUpButton.addItem(withTitle: "noFilter")
-        videoStream1PopUpButton.selectItem(withTitle: "noFilter")
+        popUpButton.addItem(withTitle: "noFilter")
+        popUpButton.selectItem(withTitle: "noFilter")
     }
-    
 
     func plog<T : CustomDebugStringConvertible>(_ str: T) {
         print(str.debugDescription)
@@ -65,17 +83,31 @@ class ViewController: NSViewController {
     }
     
     @IBAction func playVideoStream1ButtonWasTapped(_ sender: NSButton) {
-        provider.play()
+        videoStream1Provider.play()
+    }
+    
+    @IBAction func playVideoStream2ButtonWasTapped(_ sender: Any) {
+        videoStream2Provider.play()
     }
     
     @IBAction func pauseVideoStream1ButtonWasTapped(_ sender: NSButton) {
-        provider.pause()
+        videoStream1Provider.pause()
+    }
+    
+    @IBAction func pauseVideoStream2ButtonWasTapped(_ sender: Any) {
+        videoStream2Provider.pause()
     }
     
     @IBAction func videoStream1FilterWasChanged(_ sender: NSPopUpButton) {
         if let filterName = sender.titleOfSelectedItem {
             plog(filterName)
-            provider.imageFilter = imageFilters[filterName]
+            videoStream1Provider.imageFilter = imageFilters[filterName]
+        }
+    }
+    @IBAction func videoStream2FilterWasChanged(_ sender: NSPopUpButtonCell) {
+        if let filterName = sender.titleOfSelectedItem {
+            plog(filterName)
+            videoStream2Provider.imageFilter = imageFilters[filterName]
         }
     }
 }
@@ -87,7 +119,7 @@ extension ViewController {
         var dylibs: [String] = []
         let fileManager = FileManager.default
         
-        var path = Bundle.main.bundlePath.replacingOccurrences(of: appName, with: "")
+        let path = Bundle.main.bundlePath.replacingOccurrences(of: appName, with: "")
         let enumerator: FileManager.DirectoryEnumerator = fileManager.enumerator(atPath: path)!
         
         while let element = enumerator.nextObject() as? String {
@@ -128,7 +160,6 @@ extension ViewController {
 }
 
 class VideoStreamProvider {
-    
     private var player: AVPlayer!
     private var output: AVPlayerItemVideoOutput!
     private var displayLink: DisplayLink!
@@ -165,6 +196,8 @@ class VideoStreamProvider {
         }
 
         player = AVPlayer(playerItem: item)
+        player.automaticallyWaitsToMinimizeStalling = false
+        player.appliesMediaSelectionCriteriaAutomatically = false
     }
     
     private func setupDisplayLink() {

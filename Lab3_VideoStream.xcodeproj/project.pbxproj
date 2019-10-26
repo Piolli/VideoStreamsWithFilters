@@ -12,7 +12,7 @@
 		A8BC23EE2364606A005BD8FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8BC23ED2364606A005BD8FB /* Assets.xcassets */; };
 		A8BC23F12364606A005BD8FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8BC23EF2364606A005BD8FB /* Main.storyboard */; };
 		A8BC23FA23646305005BD8FB /* DisplayLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BC23F923646305005BD8FB /* DisplayLink.swift */; };
-		A8BC24142364726C005BD8FB /* libLab3_blur_filter_dylib.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A8BC24132364726C005BD8FB /* libLab3_blur_filter_dylib.dylib */; };
+		A8BC242E236485DE005BD8FB /* libLab3_blur_filter_dylib.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A8BC242D236485DE005BD8FB /* libLab3_blur_filter_dylib.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +24,7 @@
 		A8BC23F22364606A005BD8FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8BC23F32364606A005BD8FB /* Lab3_VideoStream.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Lab3_VideoStream.entitlements; sourceTree = "<group>"; };
 		A8BC23F923646305005BD8FB /* DisplayLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayLink.swift; sourceTree = "<group>"; };
-		A8BC24132364726C005BD8FB /* libLab3_blur_filter_dylib.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libLab3_blur_filter_dylib.dylib; sourceTree = "<group>"; };
+		A8BC242D236485DE005BD8FB /* libLab3_blur_filter_dylib.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libLab3_blur_filter_dylib.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,7 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8BC24142364726C005BD8FB /* libLab3_blur_filter_dylib.dylib in Frameworks */,
+				A8BC242E236485DE005BD8FB /* libLab3_blur_filter_dylib.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,7 +44,7 @@
 			children = (
 				A8BC23E823646068005BD8FB /* Lab3_VideoStream */,
 				A8BC23E723646068005BD8FB /* Products */,
-				A8BC24132364726C005BD8FB /* libLab3_blur_filter_dylib.dylib */,
+				A8BC242D236485DE005BD8FB /* libLab3_blur_filter_dylib.dylib */,
 			);
 			sourceTree = "<group>";
 		};

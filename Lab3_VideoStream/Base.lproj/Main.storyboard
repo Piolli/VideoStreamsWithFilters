@@ -783,6 +783,9 @@
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="playVideoStream2ButtonWasTapped:" target="XfG-lQ-9wD" id="lDc-z1-R7t"/>
+                                            </connections>
                                         </button>
                                         <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jwp-Dg-KrW">
                                             <rect key="frame" x="70" y="221" width="77" height="32"/>
@@ -791,6 +794,9 @@
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="pauseVideoStream2ButtonWasTapped:" target="XfG-lQ-9wD" id="Joh-s4-mZg"/>
+                                            </connections>
                                         </button>
                                         <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a4S-Lh-kCd">
                                             <rect key="frame" x="18" y="22" width="138" height="25"/>
@@ -805,6 +811,9 @@
                                                         <menuItem title="Item 3" id="T4Y-kP-l0V"/>
                                                     </items>
                                                 </menu>
+                                                <connections>
+                                                    <action selector="videoStream2FilterWasChanged:" target="XfG-lQ-9wD" id="y0Z-Xb-9To"/>
+                                                </connections>
                                             </popUpButtonCell>
                                         </popUpButton>
                                     </subviews>
@@ -814,7 +823,9 @@
                     </view>
                     <connections>
                         <outlet property="ouputVideoStream1" destination="ebU-u2-iwy" id="IZd-MD-Fck"/>
+                        <outlet property="ouputVideoStream2" destination="N9d-XP-dGx" id="lz7-rx-v5d"/>
                         <outlet property="videoStream1PopUpButton" destination="ut3-IR-ykv" id="x7o-zt-EDz"/>
+                        <outlet property="videoStream2PopUpButton" destination="a4S-Lh-kCd" id="42i-uY-ioW"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
