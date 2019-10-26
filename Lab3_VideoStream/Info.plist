@@ -30,7 +30,15 @@
 	<string>NSApplication</string>
 	<key>NSSupportsAutomaticTermination</key>
 	<true/>
+	<key>NSFileProviderDomainUsageDescription</key>
+	<string></string>
 	<key>NSSupportsSuddenTermination</key>
 	<true/>
+    
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+    </dict>
 </dict>
 </plist>
