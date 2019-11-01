@@ -1,7 +1,13 @@
 # VideoStreamsWithFilters
 View video stream with selected filter that loaded from dylibs
 
-<img src="/screenshots/screenshot.png" width="65%" height="65%">
+<img src="/screenshot1.png" width="65%" height="65%">
+
+<img src="/screenshot2.png" width="65%" height="65%">
+
+<img src="/screenshot3.png" width="65%" height="65%">
+
+<img src="/screenshot4.png" width="65%" height="65%">
 
 ### Installing:
 ```
