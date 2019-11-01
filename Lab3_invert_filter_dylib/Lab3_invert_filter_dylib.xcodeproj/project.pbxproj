@@ -1,0 +1,314 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A8BC2422236484F2005BD8FB /* Lab3_invert_filter_dylib.h in Headers */ = {isa = PBXBuildFile; fileRef = A8BC2421236484F2005BD8FB /* Lab3_invert_filter_dylib.h */; };
+		A8BC2424236484F2005BD8FB /* Lab3_invert_filter_dylib.m in Sources */ = {isa = PBXBuildFile; fileRef = A8BC2423236484F2005BD8FB /* Lab3_invert_filter_dylib.m */; };
+		A8BC242C236484FA005BD8FB /* Lab3_invert_filter_dylib.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BC242B236484FA005BD8FB /* Lab3_invert_filter_dylib.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A8BC241E236484F2005BD8FB /* libLab3_invert_filter_dylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libLab3_invert_filter_dylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8BC2421236484F2005BD8FB /* Lab3_invert_filter_dylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Lab3_invert_filter_dylib.h; sourceTree = "<group>"; };
+		A8BC2423236484F2005BD8FB /* Lab3_invert_filter_dylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lab3_invert_filter_dylib.m; sourceTree = "<group>"; };
+		A8BC242A236484FA005BD8FB /* Lab3_invert_filter_dylib-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lab3_invert_filter_dylib-Bridging-Header.h"; sourceTree = "<group>"; };
+		A8BC242B236484FA005BD8FB /* Lab3_invert_filter_dylib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab3_invert_filter_dylib.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A8BC241C236484F2005BD8FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A8BC2415236484F2005BD8FB = {
+			isa = PBXGroup;
+			children = (
+				A8BC2420236484F2005BD8FB /* Lab3_invert_filter_dylib */,
+				A8BC241F236484F2005BD8FB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A8BC241F236484F2005BD8FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A8BC241E236484F2005BD8FB /* libLab3_invert_filter_dylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A8BC2420236484F2005BD8FB /* Lab3_invert_filter_dylib */ = {
+			isa = PBXGroup;
+			children = (
+				A8BC2421236484F2005BD8FB /* Lab3_invert_filter_dylib.h */,
+				A8BC2423236484F2005BD8FB /* Lab3_invert_filter_dylib.m */,
+				A8BC242B236484FA005BD8FB /* Lab3_invert_filter_dylib.swift */,
+				A8BC242A236484FA005BD8FB /* Lab3_invert_filter_dylib-Bridging-Header.h */,
+			);
+			path = Lab3_invert_filter_dylib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A8BC241A236484F2005BD8FB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8BC2422236484F2005BD8FB /* Lab3_invert_filter_dylib.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A8BC241D236484F2005BD8FB /* Lab3_invert_filter_dylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8BC2427236484F2005BD8FB /* Build configuration list for PBXNativeTarget "Lab3_invert_filter_dylib" */;
+			buildPhases = (
+				A8BC241A236484F2005BD8FB /* Headers */,
+				A8BC241B236484F2005BD8FB /* Sources */,
+				A8BC241C236484F2005BD8FB /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lab3_invert_filter_dylib;
+			productName = Lab3_invert_filter_dylib;
+			productReference = A8BC241E236484F2005BD8FB /* libLab3_invert_filter_dylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A8BC2416236484F2005BD8FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = Alexandr;
+				TargetAttributes = {
+					A8BC241D236484F2005BD8FB = {
+						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
+					};
+				};
+			};
+			buildConfigurationList = A8BC2419236484F2005BD8FB /* Build configuration list for PBXProject "Lab3_invert_filter_dylib" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A8BC2415236484F2005BD8FB;
+			productRefGroup = A8BC241F236484F2005BD8FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A8BC241D236484F2005BD8FB /* Lab3_invert_filter_dylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A8BC241B236484F2005BD8FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8BC242C236484FA005BD8FB /* Lab3_invert_filter_dylib.swift in Sources */,
+				A8BC2424236484F2005BD8FB /* Lab3_invert_filter_dylib.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A8BC2425236484F2005BD8FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A8BC2426236484F2005BD8FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A8BC2428236484F2005BD8FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YG4U6S73S9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Lab3_invert_filter_dylib/Lab3_invert_filter_dylib-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A8BC2429236484F2005BD8FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YG4U6S73S9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Lab3_invert_filter_dylib/Lab3_invert_filter_dylib-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A8BC2419236484F2005BD8FB /* Build configuration list for PBXProject "Lab3_invert_filter_dylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8BC2425236484F2005BD8FB /* Debug */,
+				A8BC2426236484F2005BD8FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8BC2427236484F2005BD8FB /* Build configuration list for PBXNativeTarget "Lab3_invert_filter_dylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8BC2428236484F2005BD8FB /* Debug */,
+				A8BC2429236484F2005BD8FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A8BC2416236484F2005BD8FB /* Project object */;
+}
